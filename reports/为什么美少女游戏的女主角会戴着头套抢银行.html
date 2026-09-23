@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="梁主宁在 NDC 2022 复盘《蔚蓝档案》剧情如何把类型套路写成可信角色故事的中文结构化报告。" />
+    <meta name="color-scheme" content="light dark" />
+    <title>为什么美少女游戏的女主角会戴着头套抢银行｜游戏开发者讲座档案</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="返回档案首页">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>
+          <strong>游戏开发者讲座档案</strong>
+          <small>Game Developer Talk Archive</small>
+        </span>
+      </a>
+      <nav class="header-actions" aria-label="页面工具">
+        <a class="text-link" href="#sources">来源</a>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换深色模式">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main class="report-main">
+      <header class="report-hero">
+        <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="../index.html">档案首页</a>
+          <span>/</span>
+          <span>《蔚蓝档案》专题</span>
+          <span>/</span>
+          <span>完整报告</span>
+        </nav>
+        <p class="eyebrow">NDC 2022 · 梁主宁</p>
+        <h1>为什么美少女游戏的女主角会戴着头套抢银行</h1>
+        <p class="report-deck">剧情总监梁主宁从立项条件出发，说明《蔚蓝档案》怎样确立“校园故事”这一基本规则，又怎样用陌生化、隐喻和老师这一玩家身份，让持枪学生与蒙面抢银行在同一个世界里成立。</p>
+        <div class="report-meta">
+          <span>梁主宁 / 양주영</span><span>剧情</span><span>类型与角色</span><span>约 50 分钟</span><span>2022</span>
+        </div>
+      </header>
+      <div class="report-layout">
+        <aside class="report-toc" aria-label="文章目录">
+          <strong>目录</strong>
+          <ol>
+            <li><a href="#overview">这场分享在讲什么</a></li><li><a href="#conditions">从立项条件确定校园喜剧</a></li><li><a href="#strange">用陌生化扩大故事空间</a></li><li><a href="#school">所有角色首先都是学生</a></li><li><a href="#teacher">老师如何代表玩家</a></li><li><a href="#structure">单元故事与团队分工</a></li><li><a href="#methods">可带走的方法</a></li><li><a href="#limits">边界与谨慎判断</a></li><li><a href="#summary">一页纸总结</a></li><li><a href="#sources">来源与核对</a></li>
+          </ol>
+        </aside>
+        <article class="report-content">
+
+          <section id="overview">
+            <h2>这场分享在讲什么</h2>
+            <p>2022 年 NDC，Nexon Games 剧情总监梁主宁（양주영，笔名 isakusan）以《为什么美少女游戏的女主角会戴着头套抢银行？》为题，回顾《蔚蓝档案》从开发到上线第一年的剧情工作。</p>
+            <p>讲座并不是专门分析抢银行这一幕，而是借这个醒目的例子说明：项目最初只有“面向日本市场”“美少女使用掩体和枪战斗”“角色穿制服”等条件，剧情团队如何由此建立世界、玩家身份和叙事结构。</p>
+          </section>
+          <section id="conditions">
+            <h2>从立项条件确定校园喜剧</h2>
+            <p>梁主宁加入时，项目已经确定角色要穿制服、使用枪械，并采用掩体战斗。美术团队提出的方向则是明亮、清爽。剧情团队把这些条件合在一起，决定以校园、青春和喜剧作为基本语气。</p>
+            <p>问题在于，持枪学生本身就偏离现实。如果只靠设定解释，玩家需要先记住大量规则，沟通成本会很高；如果完全照搬现实校园，又无法容纳游戏已经确定的战斗方式。因此团队需要一个既熟悉又陌生的世界。</p>
+          </section>
+          <section id="strange">
+            <h2>用陌生化扩大故事空间</h2>
+            <p>梁主宁把这种处理称为“陌生化”：把熟悉的事物放进不熟悉的组合中，让玩家重新注意它。学校、社团和老师都很常见，但当学生日常携带枪械、不同学校像城市势力一样行动时，原本熟悉的校园生活就有了新的可能。</p>
+            <p>陌生化也有风险。世界越特别，需要解释的内容越多，团队内部越难形成共识。梁主宁因此强调，必须先设定一条容易理解、能够反复判断的原则，再让各种夸张事件在原则之内发生。</p>
+          </section>
+          <section id="school">
+            <h2>所有角色首先都是学生</h2>
+            <p>团队最后确定的基本规则是：这是一个校园故事，所有主要角色都是学生。即使角色担任学生会长、指挥武装组织或参与大规模冲突，写作时仍要回到学生能够理解和承担的烦恼。</p>
+            <p>这条规则不是要追求现实中的校园，而是为夸张设定提供共同尺度。故事可以借用战争、政治或宗教的外形，但角色关系仍通过社团、同学、前后辈和老师来表达。讲座把这种做法解释为隐喻：利用玩家已经熟悉的经验，帮助他们理解陌生世界。</p>
+          </section>
+          <section id="teacher">
+            <h2>老师如何代表玩家</h2>
+            <p>玩家在游戏中被设定为“老师”。角色外貌与性别没有固定形象，老师的发言也主要通过选项呈现。这是为了让玩家以第一人称进入故事，同时保留自己对角色的想象。</p>
+            <p>老师与学生的关系还承担了游戏设计上的功能。角色收集游戏需要让玩家与许多人物建立联系，也需要为付费获得的角色提供合理位置。老师可以跨越学校与社团同不同学生来往，而不必成为抢走学生戏份的固定主角。</p>
+          </section>
+          <section id="structure">
+            <h2>单元故事与团队分工</h2>
+            <p>《蔚蓝档案》的主线采用单元剧结构。不同篇章可以围绕各自的学校和人物独立展开，后来再逐步汇合。这样既能不断加入新角色，也不要求玩家一开始就理解整个世界。</p>
+            <p>梁主宁也介绍了剧情总监的工作。角色设计需要与美术团队共同完成，特殊世界观则需要反复向其他部门说明。他曾制作并多次讲解演示文稿，也留下录像供成员查看。剧情团队内部还区分写作与演出实现等职责。</p>
+            <p>总监既要亲自写作，又要处理协调和审核。梁主宁坦言，这两类工作会争夺同一段时间；总监如果只写自己的部分，团队会失去统一方向，但管理工作过多，又会压缩实际创作。</p>
+          </section>
+          <section id="methods">
+            <h2>可带走的方法</h2>
+            <ul>
+              <li>先从既定的玩法、美术和市场条件中，找出剧情必须解决的问题。</li>
+              <li>为陌生世界设定一条容易复述的基本规则，降低沟通成本。</li>
+              <li>用玩家熟悉的关系作隐喻，帮助他们理解夸张设定。</li>
+              <li>玩家身份既要适合第一人称代入，也要能连接大量角色。</li>
+              <li>单元剧可以让各篇故事独立成立，再为后续汇合保留空间。</li>
+            </ul>
+          </section>
+          <section id="limits">
+            <h2>边界与谨慎判断</h2>
+            <p>这是一场关于世界观与剧情制作的经验分享，不是对抢银行情节的逐场解析。原讲座还涉及更多开发组织与沟通细节；本报告只整理公开录像和报道能够互相核对的部分。</p>
+          </section>
+          <section id="summary">
+            <h2>一页纸总结</h2>
+            <p>《蔚蓝档案》从“制服学生使用枪械”这一立项条件出发，以明亮的校园喜剧为方向，再用陌生化创造独特世界。所有角色首先都是学生，这条规则让夸张冲突仍能通过熟悉的关系被理解。老师让玩家以第一人称连接不同角色，单元剧结构则让各校故事独立展开并在以后汇合。</p>
+          </section>
+          <section id="sources">
+            <h2>来源与核对</h2>
+            <ol>
+              <li><a href="https://www.youtube.com/watch?v=JJduIEBNbyQ" target="_blank" rel="noreferrer">YouTube：NDC 2022 讲座录像</a></li>
+              <li><a href="https://www.gamey.kr/news/articleView.html?idxno=3001939" target="_blank" rel="noreferrer">GameY：NDC22 梁主宁讲座报道</a></li>
+              <li><a href="https://www.gameple.co.kr/news/articleView.html?idxno=202788" target="_blank" rel="noreferrer">Gameple：女主角为何戴头套抢银行</a></li>
+            </ol>
+          </section>
+
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>游戏开发者讲座档案 · 报告编号 003</p>
+      <a href="../index.html">返回档案首页 →</a>
+    </footer>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>

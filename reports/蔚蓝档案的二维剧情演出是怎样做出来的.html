@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="李正熙在 NDC 2022 分享《蔚蓝档案》二维剧情演出的优缺点，以及表情、轻量动画、图像复用、纪念大厅和MomoTalk的制作方法。" />
+    <meta name="color-scheme" content="light dark" />
+    <title>蔚蓝档案的二维剧情演出是怎样做出来的｜游戏开发者讲座档案</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="返回档案首页">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>
+          <strong>游戏开发者讲座档案</strong>
+          <small>Game Developer Talk Archive</small>
+        </span>
+      </a>
+      <nav class="header-actions" aria-label="页面工具">
+        <a class="text-link" href="#sources">来源</a>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换深色模式">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main class="report-main">
+      <header class="report-hero">
+        <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="../index.html">档案首页</a>
+          <span>/</span>
+          <span>《蔚蓝档案》专题</span>
+          <span>/</span>
+          <span>完整报告</span>
+        </nav>
+        <p class="eyebrow">NDC 2022 · 李正熙</p>
+        <h1>蔚蓝档案的二维剧情演出是怎样做出来的</h1>
+        <p class="report-deck">二维演出便宜、适合大量文本、对设备要求低，却也容易单调。李正熙介绍团队怎样用表情、轻量动画、音乐、图像复用、纪念大厅和 MomoTalk，尽量接近动画的观感。</p>
+        <div class="report-meta">
+          <span>李正熙 / 이정희</span><span>演出</span><span>镜头与流程</span><span>约 45 分钟</span><span>2022</span>
+        </div>
+      </header>
+      <div class="report-layout">
+        <aside class="report-toc" aria-label="文章目录">
+          <strong>目录</strong>
+          <ol>
+            <li><a href="#overview">这场分享在讲什么</a></li><li><a href="#tradeoff">二维演出的优点和限制</a></li><li><a href="#animation">用轻量动画减少单调感</a></li><li><a href="#cutscene">一张插图怎样当成多张使用</a></li><li><a href="#lobby">纪念大厅为何不只是 Live2D</a></li><li><a href="#momotalk">MomoTalk 怎样从通知变成对话</a></li><li><a href="#methods">可带走的方法</a></li><li><a href="#limits">边界与谨慎判断</a></li><li><a href="#summary">一页纸总结</a></li><li><a href="#sources">来源与核对</a></li>
+          </ol>
+        </aside>
+        <article class="report-content">
+
+          <section id="overview">
+            <h2>这场分享在讲什么</h2>
+            <p>2022 年 6 月 8 日，Nexon Games 剧本组副组长、游戏设计师李正熙（이정희）在 NDC 分享《〈蔚蓝档案〉的剧情演出是这样做出来的》。他先解释团队为何采用类似视觉小说的二维形式，再逐项说明怎样弥补这种形式的限制。</p>
+            <p>《蔚蓝档案》的目标用户对动画及相关文化有广泛兴趣，因此团队把演出方向定为“呈现动画的感觉”。这并不意味着制作完整动画，而是在有限的立绘、背景和文本中加入足够的运动、声音与交流感。</p>
+          </section>
+          <section id="tradeoff">
+            <h2>二维演出的优点和限制</h2>
+            <p>李正熙把优点归纳为三项。第一，它适合承载大量文本，可以像带插图的小说一样阅读。第二，制作成本较低，有背景、角色立绘和文本就能推进故事。第三，对设备性能要求低，单张过场图配合文字也能完成演出。</p>
+            <p>限制同样有三项。画面通常只能同时容纳两到三名保持足够尺寸的角色；通用立绘多采用动作不大的站姿，遇到不合适的场面就要另做专用插图；文本一长，演出强弱又缺少变化，玩家就容易觉得乏味。</p>
+          </section>
+          <section id="animation">
+            <h2>用轻量动画减少单调感</h2>
+            <p>团队大量使用不需要重画姿势的轻量变化：替换表情、加感叹号和问号、让角色上下呼吸、在吃惊时抖动或跳起，再配上符合情境的音乐与音效。</p>
+            <p>李正熙用蒙面团抢银行的片段举例。画面使用的仍然都是普通站姿，但角色的呼吸、抖动、表情、图标和《Unwelcome School》组合起来后，场面就不再只是几张立绘轮流出现。</p>
+          </section>
+          <section id="cutscene">
+            <h2>一张插图怎样当成多张使用</h2>
+            <p>为了控制安装包体积，不能为每个变化都准备新图片。团队会对同一张插图进行放大、缩小和坐标移动，使它看起来像几个不同镜头。这样既能摆脱完全固定的视角，也能把玩家注意力引到不同细节。</p>
+            <p>背景效果也会改变同一张图片的气氛。讲座没有把这些手段描述成完整的“镜头语言系统”，而是把它们作为有限资源下增加变化的实用方法。</p>
+          </section>
+          <section id="lobby">
+            <h2>纪念大厅为何不只是 Live2D</h2>
+            <p>纪念大厅是羁绊剧情的最终奖励，也被李正熙视为游戏的重要差异点。角色会看向玩家，配合语音和动作表现当下情绪。</p>
+            <p>团队为了让动作、语音和字幕更协调，去掉了包围字幕的对话框，并在文字之间加入等待时间，让整个片段更接近观看动画。李正熙因此强调，纪念大厅的效果不只来自一张制作精良的 Live2D 插图，也来自剧本演出的安排。</p>
+          </section>
+          <section id="momotalk">
+            <h2>MomoTalk 怎样从通知变成对话</h2>
+            <p>MomoTalk 最初没有回复功能，学生只会单向发送信息；而且玩家一打开，可能同时收到两到五条甚至更多消息，看上去很像垃圾短信。</p>
+            <p>团队后来加入“正在输入”的提示和玩家回复，让它更像真正的一对一交流。输入等待时间还会根据人物性格和剧情状况变化。对话结束后直接进入羁绊剧情，也使前后衔接更加明确。</p>
+          </section>
+          <section id="methods">
+            <h2>可带走的方法</h2>
+            <ul>
+              <li>先明确二维演出的成本优势，也正视同时出场人数和通用站姿的限制。</li>
+              <li>用表情、图标、抖动、跳跃、音乐和音效，为普通立绘增加变化。</li>
+              <li>通过缩放、移动和背景效果重复利用单张插图。</li>
+              <li>让字幕停顿与语音、动作配合，而不是只把 Live2D 放上画面。</li>
+              <li>即时通讯界面要让玩家能够回复，并按人物性格调整输入节奏。</li>
+            </ul>
+          </section>
+          <section id="limits">
+            <h2>边界与谨慎判断</h2>
+            <p>讲座介绍的是呈现手段，没有公开完整工具链，也没有讨论文本修改、语音返工、跨部门排期或高潮场资源分级。现有报道不能支持这些进一步推断。</p>
+          </section>
+          <section id="summary">
+            <h2>一页纸总结</h2>
+            <p>李正熙先承认二维形式容易制作、适合长文本、设备门槛低，也承认它同时出场人数少、依赖专用插图、长时间观看容易单调。团队的答案不是改做三维，而是在现有形式里加入轻量动画、声音和图像复用，并把纪念大厅与 MomoTalk 做得更像真实交流。</p>
+          </section>
+          <section id="sources">
+            <h2>来源与核对</h2>
+            <ol>
+              <li><a href="https://www.gamey.kr/news/articleView.html?idxno=3001928" target="_blank" rel="noreferrer">GameY：NDC22 2D 剧情演出讲座</a></li>
+              <li><a href="https://www.fomos.kr/esports/news_view?entry_id=111316" target="_blank" rel="noreferrer">Fomos：二维演出如何做出来</a></li>
+              <li><a href="https://www.youtube.com/watch?v=W_XiZ3aRs0E" target="_blank" rel="noreferrer">YouTube：讲座录像</a></li>
+            </ol>
+          </section>
+
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>游戏开发者讲座档案 · 报告编号 004</p>
+      <a href="../index.html">返回档案首页 →</a>
+    </footer>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>

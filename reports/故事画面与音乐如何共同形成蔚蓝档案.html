@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="2023 年音乐圆桌三篇连载的中文结构化报告：作曲、音效与剧情画面如何共同形成《蔚蓝档案》的听感。" />
+    <meta name="color-scheme" content="light dark" />
+    <title>故事、画面与音乐如何共同形成蔚蓝档案｜游戏开发者讲座档案</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="返回档案首页">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>
+          <strong>游戏开发者讲座档案</strong>
+          <small>Game Developer Talk Archive</small>
+        </span>
+      </a>
+      <nav class="header-actions" aria-label="页面工具">
+        <a class="text-link" href="#sources">来源</a>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换深色模式">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main class="report-main">
+      <header class="report-hero">
+        <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="../index.html">档案首页</a>
+          <span>/</span>
+          <span>《蔚蓝档案》专题</span>
+          <span>/</span>
+          <span>完整报告</span>
+        </nav>
+        <p class="eyebrow">2023 · 音乐圆桌</p>
+        <h1>故事、画面与音乐如何共同形成蔚蓝档案</h1>
+        <p class="report-deck">剧情总监梁主宁与 Mitsukiyo、KARUT、Nor 三位作曲家介绍《蔚蓝档案》的音乐方向、委托流程和代表曲目的制作过程，也谈到故事、画面与音乐怎样在同一场景中配合。</p>
+        <div class="report-meta">
+          <span>音频团队对谈</span><span>音乐</span><span>跨职能协作</span><span>长对谈 · 三篇</span><span>2023</span>
+        </div>
+      </header>
+      <div class="report-layout">
+        <aside class="report-toc" aria-label="文章目录">
+          <strong>目录</strong>
+          <ol>
+            <li><a href="#overview">这组对谈在讲什么</a></li><li><a href="#direction">未来贝斯如何成为音乐方向</a></li><li><a href="#process">一首曲子怎样完成委托</a></li><li><a href="#examples">从关键词到具体声音</a></li><li><a href="#aoharu">《RE Aoharu》的提前布局</a></li><li><a href="#outside">音乐如何离开游戏继续存在</a></li><li><a href="#methods">可带走的方法</a></li><li><a href="#limits">边界与谨慎判断</a></li><li><a href="#summary">一页纸总结</a></li><li><a href="#sources">来源与核对</a></li>
+          </ol>
+        </aside>
+        <article class="report-content">
+
+          <section id="overview">
+            <h2>这组对谈在讲什么</h2>
+            <p>2023 年 2 月，GameFocus 分三篇刊登《蔚蓝档案》音乐专题访谈。受访者是剧情总监兼音乐制作人梁主宁、音乐总监 Mitsukiyo，以及作曲家 KARUT、Nor。</p>
+            <p>第一篇介绍音乐方向和委托流程，第二篇逐首讨论代表曲目，第三篇谈作曲学习、喜欢的作品、实体原声带和“Sound Archive”线上演出。本报告按制作流程重新整理。</p>
+          </section>
+          <section id="direction">
+            <h2>未来贝斯如何成为音乐方向</h2>
+            <p>《蔚蓝档案》希望讲述明亮、轻快的校园青春故事，美术也以清爽通透为方向。金用河最初提出用可爱贝斯和未来贝斯作为主要音乐类型，梁主宁再据此安排全局。因为韩国当时擅长这类音乐的人选有限，团队邀请外部作曲家参与。</p>
+            <p>Mitsukiyo 在 2019 年收到联系，提交作品集后加入项目。他此前没有制作未来贝斯的经验，经过多次尝试才完成标题音乐《Constant Moderato》。Nor 则因为作品中清爽的电子音乐受到邀请；KARUT 在考虑是否放弃音乐工作时收到委托，随后辞去兼职投入制作。</p>
+          </section>
+          <section id="process">
+            <h2>一首曲子怎样完成委托</h2>
+            <p>梁主宁先写一份较粗略的需求，说明曲子会用于什么故事、整体气氛如何，并附上参考图像。Mitsukiyo 再把它改写成更具体的委托书，补充音乐类型、关键词和参考作品，然后交给作曲家。</p>
+            <p>作曲家会把委托书与开发中的图像、视频来回对照。KARUT 还会寻找气氛相近的游戏、动画或电影作为参考。团队尊重作曲家的专业判断，只要结果符合场景和方向，也会采用他们在委托之外主动提出的想法。</p>
+          </section>
+          <section id="examples">
+            <h2>从关键词到具体声音</h2>
+            <p>Mitsukiyo 以《DIVE INTO SUMMER》为例。他从“夏天”联想到水滴和海浪声，把未来贝斯与车库浩室结合；后半段突然安静下来，表现旅程将结束时的不舍，随后重新上扬，为下一次夏日活动留下期待。</p>
+            <p>《Dolce Biblioteca》的关键词是修女、古书馆和魔法师。为了避免做成与游戏气氛不合的沉重宗教或奇幻音乐，他把“修女”继续拆成天主教、神圣、安宁，最后选择带有空间感的钟声和较缓慢的旋律。</p>
+            <p>KARUT 制作总力战音乐时，会先研究首领的视觉与出处。《Kaiten Screw》参考较早期的日本特摄作品，使用上世纪末常见的音源；《Oxygen Destroyer》则用铜管、重低音、警报声和快速节奏表现巨大怪兽。</p>
+            <p>《Unwelcome School》最初也不是为阿露专门创作。委托要求它适合有速度感的场景，并给出恶行、喜剧、骚乱和反派登场等关键词。后来它因剧情使用和二次创作而成为代表曲，是作曲家没有预料到的结果。</p>
+          </section>
+          <section id="aoharu">
+            <h2>《RE Aoharu》的提前布局</h2>
+            <p>梁主宁第一次听到《Aoharu》时，就决定把它用于序章。最终篇的故事在世界观建立之初已经有了具体构想，因此团队很早便委托制作它的改编曲，并计划在结尾与序章形成呼应。</p>
+            <p>《RE Aoharu》在 2021 年 2 月 1 日发出委托，接近两年后才随第四支宣传片公开。梁主宁只决定用途和方向，具体改编交给 Mitsukiyo 与 Nor。艺术总监金仁听到成品后，也由音乐联想到宣传片的画面结构。</p>
+          </section>
+          <section id="outside">
+            <h2>音乐如何离开游戏继续存在</h2>
+            <p>第三篇访谈谈到实体原声带与“Sound Archive”线上演出。KARUT 认为，游戏音乐不再只是装饰，也能唤起玩家实际游玩时的记忆。作曲家在演出直播中直接看到观众反应，也第一次以另一种方式与玩家交流。</p>
+            <p>给新人的建议同样很具体：大量听歌、分析和模仿，理解自己究竟喜欢哪些部分；不要只听原声带，还要亲自玩游戏，因为同一首音乐在游戏场景中会产生不同感受。</p>
+          </section>
+          <section id="methods">
+            <h2>可带走的方法</h2>
+            <ul>
+              <li>由项目负责人先说明场景、目的和参考图像，再由音乐负责人转成专业委托。</li>
+              <li>把抽象气氛继续拆成可以落实到节奏、音色和配器的关键词。</li>
+              <li>创作首领或活动音乐时，同时研究画面、设定和引用的文化类型。</li>
+              <li>关键故事如果提前确定，可以提早委托主题曲，为以后形成音乐上的呼应。</li>
+              <li>评估游戏音乐时应回到实际游玩场景，而不只听独立音轨。</li>
+            </ul>
+          </section>
+          <section id="limits">
+            <h2>边界与谨慎判断</h2>
+            <p>这三篇是媒体访谈，不是音频技术讲座。它们没有说明游戏内的循环、混音、中间件、响度或具体剪辑流程，因此本报告不对这些环节作进一步推断。</p>
+          </section>
+          <section id="summary">
+            <h2>一页纸总结</h2>
+            <p>《蔚蓝档案》先确定未来贝斯和可爱贝斯的整体方向，再由梁主宁说明故事与场景、Mitsukiyo 完成专业委托、作曲家把关键词转成具体声音。代表曲目显示，音乐既要回应画面与设定，也可以反过来启发宣传片和剧情演出。《RE Aoharu》更说明，提前确定故事终点，能够让音乐在多年后完成首尾呼应。</p>
+          </section>
+          <section id="sources">
+            <h2>来源与核对</h2>
+            <ol>
+              <li><a href="https://gamefocus.co.kr/detail.php?number=138438&thread=22r04" target="_blank" rel="noreferrer">GameFocus：作曲三人与梁主宁对谈</a></li>
+              <li><a href="https://gamefocus.co.kr/detail.php?number=138508&thread=22r04" target="_blank" rel="noreferrer">GameFocus：音乐对谈第二篇</a></li>
+              <li><a href="https://gamefocus.co.kr/detail.php?number=138519&thread=22r04" target="_blank" rel="noreferrer">GameFocus：音乐对谈第三篇</a></li>
+            </ol>
+          </section>
+
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>游戏开发者讲座档案 · 报告编号 005</p>
+      <a href="../index.html">返回档案首页 →</a>
+    </footer>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>

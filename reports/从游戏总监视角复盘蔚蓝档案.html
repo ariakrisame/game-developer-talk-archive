@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="车敏瑞在 NDC 2026 从游戏总监视角复盘《蔚蓝档案》制作与运营决策的中文结构化报告。" />
+    <meta name="color-scheme" content="light dark" />
+    <title>从游戏总监视角复盘蔚蓝档案｜游戏开发者讲座档案</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="返回档案首页">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>
+          <strong>游戏开发者讲座档案</strong>
+          <small>Game Developer Talk Archive</small>
+        </span>
+      </a>
+      <nav class="header-actions" aria-label="页面工具">
+        <a class="text-link" href="#sources">来源</a>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换深色模式">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main class="report-main">
+      <header class="report-hero">
+        <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="../index.html">档案首页</a>
+          <span>/</span>
+          <span>《蔚蓝档案》专题</span>
+          <span>/</span>
+          <span>完整报告</span>
+        </nav>
+        <p class="eyebrow">NDC 2026 · 车敏瑞</p>
+        <h1>从游戏总监视角复盘蔚蓝档案</h1>
+        <p class="report-deck">游戏总监车敏瑞把开发到上线约一年的经历拆成三件做对的事和三件没做好的事。报告整理愿景版本、授权与最低线、34个月排期、长期框架，以及稳定性、日常互动和内容库存不足。</p>
+        <div class="report-meta">
+          <span>车敏瑞 / 차민서</span><span>制作</span><span>复盘</span><span>约 50 分钟</span><span>2026</span>
+        </div>
+      </header>
+      <div class="report-layout">
+        <aside class="report-toc" aria-label="文章目录">
+          <strong>目录</strong>
+          <ol>
+            <li><a href="#overview">这场分享在讲什么</a></li><li><a href="#vision">五屏愿景版本</a></li><li><a href="#schedule">把日期当成战略</a></li><li><a href="#liveframe">长期服务的底图</a></li><li><a href="#misses">稳定、日常与空窗</a></li><li><a href="#methods">可带走的方法</a></li><li><a href="#limits">边界与谨慎判断</a></li><li><a href="#summary">一页纸总结</a></li><li><a href="#sources">来源与核对</a></li>
+          </ol>
+        </aside>
+        <article class="report-content">
+
+          <section id="overview">
+            <h2>这场分享在讲什么</h2>
+            <p>2026 年 NDC，前游戏总监车敏瑞（차민서 / Cha Min-seo）发表《蔚蓝档案》制作复盘。范围被他主动收窄：从 2018 年开发启动到上线后大约一年。文档其实在第一部最终篇收束前后就写过，当时游戏仍在运营、自己也已逐步放手，他选择先不外传。现在才拿出来，是因为“比较能心平气和地讲”。</p>
+            <p>结构很硬：三件做对的事，三件没做好的事。Inven 报道把它概括成速度、授权，以及不断自己验证。车敏瑞拒绝把它讲成成功学。他说自己不是抛漂亮议程的人，只想用简单标准和共同可玩的版本，让很多人朝同一个方向做。</p>
+          </section>
+          <section id="vision">
+            <h2>五屏愿景版本</h2>
+            <p>他加入时，团队一边做战斗原型，一边做演出影像。年底里程碑被用来交出一个愿景版本：标题、大厅、关卡选择、编队、战斗，一共五屏。实现能省就省，缺的用影像补，目标却是让人从头到尾玩完“一小款已经成立的游戏”。</p>
+            <p>车敏瑞把这个版本的任务写成：做出到完成时也不会变的真正愿景。白子的视线、关卡选择里的对话、坦克召唤与乘坐，这些骨架后来并没有被推倒。全员玩过之后，判断变成：故事和美术已经够好，该尽快把它做成可卖的游戏。</p>
+            <p>方法是快授权。艺术指导和剧情负责人拿到很大权限；他守的是最低线——游戏时长、账号等级、角色数、背景数——并在这条线里把各部分收成同一个游戏框架。他承认，《蔚蓝档案》的相当部分是金用河、艺术指导和剧情负责人做出来的；自己的工作是让它们看起来是一款游戏。</p>
+          </section>
+          <section id="schedule">
+            <h2>把日期当成战略</h2>
+            <p>日本上线是 2021 年 2 月 4 日，距 2018 年 4 月开工约 34 个月。原目标 2020 年 11 月底，略有滑移，但仍在三年内交出新作。全球版 2021 年 11 月，中国版 2023 年。他把守期的理由说得很直：先发窗口是预测玩家何时会爱上这款游戏；守住预测最确定的办法，就是按预告的日期交货。</p>
+            <p>短期目标被写成任何人都能听懂的数字：FGT 两小时可玩，CBT 二十小时可玩。开服准备约一个月可玩内容和三个月运营日程。一个截止日接下一个截止日。恐惧靠测试、自己玩和外部反馈压住，而不是靠开会把担心说完。</p>
+            <p>全球不同时上线，也是同一逻辑。当时大约七十人，硬同期会挤掉与日本发行商 Yostar 的协作，或为等中国档期丢掉窗口。“能做的、重要的地区，先慢慢做完。”</p>
+          </section>
+          <section id="liveframe">
+            <h2>长期服务的底图</h2>
+            <p>第三件做对的事是先画出长期服务框架。他拿前作《OVERHIT》和《七龙珠》原作与手游比：只把“更强”当手段，通胀会把强弱关系洗掉。收集游戏还有另一题——玩家往往只想养一支队伍。他问的是：怎样让人愿意开多队。</p>
+            <p>答案偏向人人能看懂的属性克制，而不是元素特效。金用河提过水风土火，他反问“那手是不是要喷水”。没有叙事和美术托住的系统，他不收。最后落地的是攻防属性克制，以及竞争型终局内容“总力战”。颜色和外形要让第一次打开游戏的人也能猜。</p>
+            <p>战略地图的启发来自《少女前线》，总力战来自《公主连结》。他立刻补了一句：着想点和真正好玩的点通常不是同一个地方，所以成品会走样。他自评这套“易学难精”对留存是有效的。</p>
+          </section>
+          <section id="misses">
+            <h2>稳定、日常与空窗</h2>
+            <p>没做好的第一件是版本稳定。他甚至提到百科上的事故条目和日本开服的维护公告。原因被他揽回内部：第一次跟外部发行商协作，QA 基准不够硬，不是把锅推给发行。超预期的 DAU、AWS 东京故障、新冠导致几乎无法当面开会，都放大了这个问题。</p>
+            <p>第二件是日常互动不够。他和金用河确认过：能力重要还是爱重要，答案是爱。于是需要战斗之外的相处——MomoTalk、咖啡厅一类。这类内容吃掉 UI、美术、演出、剧本，是开发里最贵的资源；每加一个学生，还要去补旧角色的相处。轴一增多，痛的是整款游戏的体力。</p>
+            <p>第三件被他自嘲为“没更新”。原以为预做一到三个月即可，后来觉得应当预做六个月以上。上线前已经准备了三个月活动说明，仍然出现空窗。伊甸条约篇之后数据回升，反衬出那之前有多难熬。</p>
+          </section>
+          <section id="methods">
+            <h2>可带走的方法</h2>
+            <ul>
+              <li>用五屏可玩版本锁定不会变的愿景，再谈铺量。</li>
+              <li>给艺术和剧情大授权，总监守最低线和游戏框架。</li>
+              <li>把 FGT、CBT、开服可玩时长写成人人能懂的短目标。</li>
+              <li>长期系统必须能被第一次打开的人看懂，并有叙事托住。</li>
+              <li>修问题先做不用争论就能动手的那一批；只抱怨不提案的人不要进桌。</li>
+              <li>创作冲突可以留下，前提是记录决策，并在限时内交货。</li>
+            </ul>
+          </section>
+          <section id="limits">
+            <h2>边界与谨慎判断</h2>
+            <p>这是上线前后一年的复盘，不是整条运营史。车敏瑞当时已离开日常制作，现职在项目 RX。现场问答里关于每日任务、角色认知上限、主机移植的回答，是态度而不是承诺。媒体稿经过整理，内部表和具体事故链并未逐条公开。</p>
+          </section>
+          <section id="summary">
+            <h2>一页纸总结</h2>
+            <p>车敏瑞把做对的事写成：五屏愿景版本、守住约 34 个月的上线、以及用克制与多队需求画出长期底图。没做好的是稳定、日常相处的体力、和不够深的内容库存。方法很素：先做出来，一起玩，一起决定改什么，再做。总监的价值是让所有漂亮部分仍然是同一款游戏，并在截止日前结束争论。</p>
+          </section>
+          <section id="sources">
+            <h2>来源与核对</h2>
+            <ol>
+              <li><a href="https://www.inven.co.kr/webzine/news/?news=317567" target="_blank" rel="noreferrer">Inven：NDC26 车敏瑞复盘</a></li>
+              <li><a href="https://ndc.nexon.com/" target="_blank" rel="noreferrer">NDC 2026 日程</a></li>
+            </ol>
+          </section>
+
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>游戏开发者讲座档案 · 报告编号 006</p>
+      <a href="../index.html">返回档案首页 →</a>
+    </footer>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>

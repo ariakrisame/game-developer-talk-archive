@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="2023 年最终篇开发者评论：为何给持续运营游戏安排结局、最终篇从何时开始准备，以及连续更新和大型战斗如何设计的中文结构化报告。" />
+    <meta name="color-scheme" content="light dark" />
+    <title>最终篇为何要在运营游戏中拥有一个结局｜游戏开发者讲座档案</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="../index.html" aria-label="返回档案首页">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+        <span>
+          <strong>游戏开发者讲座档案</strong>
+          <small>Game Developer Talk Archive</small>
+        </span>
+      </a>
+      <nav class="header-actions" aria-label="页面工具">
+        <a class="text-link" href="#sources">来源</a>
+        <button class="icon-button" id="theme-toggle" type="button" aria-label="切换深色模式">
+          <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main class="report-main">
+      <header class="report-hero">
+        <nav class="breadcrumb" aria-label="面包屑导航">
+          <a href="../index.html">档案首页</a>
+          <span>/</span>
+          <span>《蔚蓝档案》专题</span>
+          <span>/</span>
+          <span>完整报告</span>
+        </nav>
+        <p class="eyebrow">2023 · 开发者评论</p>
+        <h1>最终篇为何要在运营游戏中拥有一个结局</h1>
+        <p class="report-deck">林宗奎在韩国服两周年直播中回顾第一部最终篇：团队从 2019 年的第一支宣传片起就在准备，并希望用一个有结局的故事，让新的知识产权真正走到起跑线上。</p>
+        <div class="report-meta">
+          <span>林宗奎、孙智媛等</span><span>第一部最终篇</span><span>开发回顾</span><span>直播文字报道</span><span>2023</span>
+        </div>
+      </header>
+      <div class="report-layout">
+        <aside class="report-toc" aria-label="文章目录">
+          <strong>目录</strong>
+          <ol>
+            <li><a href="#overview">这段评论在讲什么</a></li><li><a href="#why">运营游戏为什么要有结局</a></li><li><a href="#start">最终篇从何时开始准备</a></li><li><a href="#release">为什么选择连续更新</a></li><li><a href="#battle">怎样让玩家感到自己也在现场</a></li><li><a href="#methods">可带走的方法</a></li><li><a href="#limits">边界与谨慎判断</a></li><li><a href="#summary">一页纸总结</a></li><li><a href="#sources">来源与核对</a></li>
+          </ol>
+        </aside>
+        <article class="report-content">
+
+          <section id="overview">
+            <h2>这段评论在讲什么</h2>
+            <p>2023 年 10 月 28 日，《蔚蓝档案》韩国服两周年直播公开了一段分为上下两部分的最终篇开发者评论。游戏总监林宗奎介绍了最终篇的起点、开发时间和发布方式，美术部门副负责人孙智媛则谈到凯坦机器人对佩洛洛斯拉那场大战的制作目标。</p>
+            <p>本报告依据 GameY 对周年直播的详细文字报道整理。此前误列的 YouTube 链接实际是另一场活动评论，现已移除；由于尚未核到这段最终篇评论的独立官方视频页，本文完整度标为“中”。</p>
+          </section>
+          <section id="why">
+            <h2>运营游戏为什么要有结局</h2>
+            <p>林宗奎说，团队讨论过为持续运营游戏安排结局。这样做并不常见，但他们认为，第一部最终篇是让一个新知识产权走到起跑线上的合适办法，因此从项目早期就把它设为目标，并决定在两周年推出。</p>
+            <p>这里的“最终篇”指第一部故事的收束，并不等于服务结束。这段评论谈的是团队为何采用这种结构，不是对所有运营游戏提出普遍主张。</p>
+          </section>
+          <section id="start">
+            <h2>最终篇从何时开始准备</h2>
+            <p>林宗奎把起点追溯到 2019 年公开的第一支宣传片。到 2021 年 8 月，相关内容和视觉方向已经整理到可以提案的程度，团队完成内部演示后，正式进入制作。</p>
+            <p>音乐也承担了首尾呼应的作用。最终篇使用《RE AOHARU》，是为了呼应序章中的《AOHARU》。这项选择不是事后附会，而是制作时明确考虑的结构。</p>
+          </section>
+          <section id="release">
+            <h2>为什么选择连续更新</h2>
+            <p>第四支宣传片公开后，团队很快推出最终篇第一章。林宗奎解释，他们希望所有玩家能同时体验这份规模很大的内容，因此选择集中、连续地发布，而不是把各章拉得很开。</p>
+            <p>另一篇同期访谈中，他也承认这种做法风险很高。团队提前制作主要内容，并准备在上线后根据反馈继续完善。第四支宣传片最终选择在两周年直播中突然公开，则采用了 Yostar 市场团队的建议。</p>
+          </section>
+          <section id="battle">
+            <h2>怎样让玩家感到自己也在现场</h2>
+            <p>谈到凯坦机器人对佩洛洛斯拉的大战时，孙智媛说，目标是让玩家感到自己正和所有人一起在基沃托斯现场战斗。为了表现与巨大体型相称的细节，工作室里许多成员都参与了制作。</p>
+            <p>公开文字记录没有继续拆解这场战斗的镜头、程序或美术管线，因此本报告不替团队补写各部门的具体分工。</p>
+          </section>
+          <section id="methods">
+            <h2>可带走的方法</h2>
+            <ul>
+              <li>持续运营游戏也可以预先设计阶段性结局。</li>
+              <li>用早期宣传片和音乐主题为多年后的收束预留线索。</li>
+              <li>集中发布大型剧情前，应提前制作主要内容，并预备上线后的调整方案。</li>
+              <li>大型战斗的体验目标可以先写成一句话：让玩家感到自己也在现场。</li>
+            </ul>
+          </section>
+          <section id="limits">
+            <h2>边界与谨慎判断</h2>
+            <p>周年直播中的开发者评论并不是完整的项目复盘，GameY 的报道也只摘录了部分发言。临近截止增加日富美演讲场面等细节，来自金仁的另一篇访谈，不属于本报告依据的文字记录，因此没有混入正文。</p>
+          </section>
+          <section id="summary">
+            <h2>一页纸总结</h2>
+            <p>第一部最终篇从 2019 年第一支宣传片开始准备，2021 年 8 月后正式进入制作。团队认为，给运营游戏安排一个阶段性结局，可以让新 IP 真正走到起跑线上。第四支宣传片和第一章随后连续公开，是为了让玩家一起体验这份大型内容；音乐和大型战斗则分别承担首尾呼应与共同参战的感受。</p>
+          </section>
+          <section id="sources">
+            <h2>来源与核对</h2>
+            <ol>
+              <li><a href="http://www.gamey.kr/news/articleView.html?idxno=3006849" target="_blank" rel="noreferrer">GameY：韩国服两周年直播报道</a></li>
+            </ol>
+          </section>
+
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <p>游戏开发者讲座档案 · 报告编号 012</p>
+      <a href="../index.html">返回档案首页 →</a>
+    </footer>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>
