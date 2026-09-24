@@ -776,9 +776,9 @@ main,
 
 .report-layout {
   display: grid;
-  grid-template-columns: 240px minmax(0, 720px);
-  justify-content: space-between;
-  gap: clamp(40px, 8vw, 100px);
+  grid-template-columns: 220px minmax(0, 720px);
+  justify-content: start;
+  gap: clamp(20px, 2.5vw, 28px);
   padding: 56px 0 100px;
 }
 
